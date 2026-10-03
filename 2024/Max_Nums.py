@@ -12,10 +12,10 @@ K = 4
 
 """
 
-def max_numbers():
+def max_numbers_from_array():
     numbers = list(map(int, input("Write some numbers: ").split()))
     count_numbers_to_take_from_array = int(input("How many numbers you want to take? "))
     numbers.sort(reverse=True)
     count_numbers_to_take_from_array = numbers[:count_numbers_to_take_from_array]
     print(*count_numbers_to_take_from_array)
-max_numbers()
+max_numbers_from_array()
